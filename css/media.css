@@ -63,18 +63,25 @@
 	}
 
 	.nav ul li {
+        margin-top: 15px;
 		text-align: left;
-		padding: 5px 15px;
-		
-	}
+        padding: 5px 15px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    
+    
 	
 	#nav_toogle:checked ~ ul {
+        
 		display: grid;
 		position: fixed;
 		top: 0;
 		right: 10px;
-		background-color:  #eeeeee;
-		opacity: .8;
+		background-color:  #4169E1;
+        opacity: .8;
+        height: 100%;
+        z-index: 1;
 	}
 
 
@@ -120,29 +127,28 @@
        
     }
 
+    .nav ul li {
+        margin-top: 0;
+		text-align: left;
+        padding: 5px 5px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    
+
     #nav_toogle:checked ~ ul {
 		display: grid;
 		position: fixed;
-		top: 30px;
+		top: 90px;
 		right: 35px;
-		background-color:  #eeeeee;
-		opacity: .8;
+		background-color: #4169E1;
+        opacity: .8;
+        height: 100%;
 	}
     
     
-    .nav ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: 55px; 
     
-        display: none;
-    }
-
-    .nav ul li {
-		text-align: right;
-		padding: 5px 5px;
-		
-	}
     
     .slider {
         padding-top: 15px;
@@ -200,25 +206,12 @@
     }
 
     .wrapper_frame {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
-    .frame_info {
-        
-        margin-top: 0;
-        padding-top: 0;
-        padding-left: 100px;
-        background-color:  #eeeeee;
-    }
-
+    
     .frame_img {
-        margin-top: 0;
-        margin-left:30px;
-        width: 231px;
-        height: 190px;
-        background-image: url(../image/map-marker.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+        margin-bottom: 50px;
     }
     
 }
@@ -345,29 +338,22 @@
        margin-bottom: 25px;
     }
 
-    .frame_info {
-        
+    .frame {
+        height: auto;
         margin-top: 0;
-        padding-top: 0;
-        padding-left: 0;
-        background-color:  #eeeeee;
+        padding-top: 50px;
+        background-image: none;
+        background-color: #eeeeee;
     }
 
+    .wrapper_frame {
+        grid-template-columns: 1fr;
+    }
+
+    
     .frame_img {
-        margin-top: 0;
-        margin-left:10px;
-        width: 231px;
-        height: 190px;
-        background-image: url(../image/map-marker.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+        margin-bottom: 50px;
     }
-
-    .frame_info .frame_button {
-        
-        padding: 5px 20px;
-    }
-
     .wrapper_footer {
         grid-template-columns: 1fr;
     }
